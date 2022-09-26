@@ -30,7 +30,7 @@ h1, h3, p{
 
 /* Set the apperance of the class, chart */
 .chart{
-    background-color: orange;
+    background-color: blue;
     width:330px;
     border-width: 10px;
     border-style: solid;
