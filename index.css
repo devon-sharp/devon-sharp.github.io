@@ -9,7 +9,7 @@
 
 /* Set the background color for my page: */
 body{
-    background-color: rgb(233, 233, 233);
+    background-color: #497a87;
  
 }
 
@@ -22,20 +22,32 @@ h1, h3, p{
 }
     
 .myWeek1{
-    margin: auto;
-    max-width: 600px;
-    background-color: cornsilk;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    max-width: 1200px;
+    background-color: #e7b988;
+    border-width: 3px;
+    border-style: outset;
+    border-radius: 8px;
+    border-color: rgba(0, 7, 3, 0.829); 
 }
 
 
 /* Set the apperance of the class, chart */
 .chart{
-    background-color: cornsilk;
-    width:330px;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: cornsilk;
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 120%;
+    max-width: 1200px;
+    background-color: rgb(250, 250, 250); 
+    width:450px;
+    border-width: 3px;
+    border-style: outset; 
+    border-radius: 8px;
+    border-color: rgba(0, 7, 3, 0.829); 
 
     
 }
