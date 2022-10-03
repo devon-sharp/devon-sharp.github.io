@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Total IMF Credit Outstanding for all members from 1984 - 2022 ",
+    "subtitle": "Loans disbursed ($bn). Source: IMF",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/devon-sharp/devon-sharp.github.io/main/IMF%20credit%20clean.csv"
+  },
+  "transform": [{"calculate": "datum.Totals/1000000000", "as": "billions"}],
+  "height": 300,
+  "width": 380,
+  "mark": {"type": "bar", "color": "rgb(0, 47, 167)"},
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {"title": null, "grid": false, "ticks": true, "labelAngle": 90}
+    },
+    "y": {
+      "field": "billions",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false}
+    }
+  },
+  "config": {}
+}
