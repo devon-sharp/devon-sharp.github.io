@@ -9,7 +9,7 @@
 
 /* Set the background color for my page: */
 body{
-    background-color: #497a87;
+    background-color: #80b0bd;
  
 }
 
@@ -27,7 +27,7 @@ h1, h3, p{
     margin-right: auto;
     width: 60%;
     max-width: 1200px;
-    background-color: #e7b988;
+    background-color: #f0c99f;
     border-width: 3px;
     border-style: outset;
     border-radius: 8px;
