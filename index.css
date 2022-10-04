@@ -9,16 +9,21 @@
 
 /* Set the background color for my page: */
 body{
-    background-color: #80b0bd;
- 
+    background-color: #80b0bd; 
 }
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-h1, h3, p{
+h1, p{
     color:rgb(17, 17, 17);
     font-family: 'Merriweather', sans-serif;
     text-align: center;
+}
+h3{
+    color:rgb(17, 17, 17);
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+    text-decoration: underline;
 }
     
 .myWeek1{
@@ -48,7 +53,5 @@ h1, h3, p{
     border-style: outset; 
     border-radius: 8px;
     border-color: rgba(0, 7, 3, 0.829); 
-
-    
 }
     
