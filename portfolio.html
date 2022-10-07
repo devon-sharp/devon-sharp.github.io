@@ -47,8 +47,11 @@
         <h3>Week 2:</h3>
         <p> Build three live charts and embed them onto your page. Run the first two directly from your GitHub, and deliver the third chart directly through an API.</p>
         <h3>Total IMF Credit Outstanding</h3>
-        <p>Total IMF loans oustanding ($bn) </p>
+<!--         <p>Total IMF loans oustanding ($bn) </p> -->
         <div class="chart" id="chart4"> </div>
+        <h3>Total IMF Credit Outstanding as a Share of World GDP</h3>
+<!--         <p>Total IMF loans oustanding ($bn) </p> -->
+        <div class="chart" id="chart5"> </div>
     </div> 
 </body>
 
@@ -59,6 +62,7 @@
     var myChart2 = "inflation.json";
     var myChart3 = "environment.json";
     var myChart4 = "IMF outstanding credit.json";
+    var myChart5 = "IMF loan to gdp.json";
 
     
     // Embed charts:
@@ -66,6 +70,7 @@
     vegaEmbed('#chart2', myChart2);
     vegaEmbed('#chart3', myChart3);
     vegaEmbed('#chart4', myChart4);
+    vegaEmbed('#chart5', myChart5);
 
 </script>
 
