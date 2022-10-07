@@ -4,7 +4,7 @@
 
 
 /* Import a font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 
 /* Set the background color for my page: */
@@ -22,13 +22,13 @@ body{
 /* Choose the appearance of the tags, h1, h3 and p: */
 h1, p{
     color:rgb(0, 0, 0);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     text-align: center;
     /* text-decoration: underline; */
 }
 h3{
     color:rgb(0, 0, 0);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     text-align: center;
     text-decoration: underline;
 }
@@ -81,7 +81,7 @@ a{
     border-style: solid;
     border-radius: 10px;
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Merriweather', monospace;
     font-weight:700;
     color:black;
     
