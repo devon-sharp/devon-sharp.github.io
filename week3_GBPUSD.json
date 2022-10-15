@@ -1,7 +1,16 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Daily GBP/USD Closing Price since the start of 2022",
-  "description": "A simple bar chart with embedded data.",
+  "title":{
+  "text": "Daily GBP/USD Closing Price since the start of 2022",
+  "subtitle": "Price of GBP/USD from Janauary 1st 2022 till present (14/10/2022). Source: Yahoo Finance",
+  "subtitleFontStyle": "italic",
+  "subtitleFontSize": 10,
+  "anchor": "start",
+  "color": "black"
+  },
+  
+  "width": 300,
+  "height": 300,
   "data": {
     "values": [
       {
@@ -1853,8 +1862,8 @@
   },
   "mark": "line",
   "encoding": {
-    "x": {"field": "Date", "type": "temporal", "axis": {"labelAngle": 0}},
-    "y": {"field": "Close", "type": "quantitative"}
+    "x": {"field": "Date", "type": "temporal", "axis": {"labelAngle": 90}},
+    "y": {"field": "Close", "type": "quantitative", "title": "Closing Price"}
   },
   "config": {}
 }
