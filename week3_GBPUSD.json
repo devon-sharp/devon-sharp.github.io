@@ -2,7 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title":{
   "text": "Daily GBP/USD Closing Price since the start of 2022",
-  "subtitle": "Price of GBP/USD from Janauary 1st 2022 till present (14/10/2022). Source: Yahoo Finance",
+  "subtitle": "Price of GBP/USD from Janauary 1st 2022 till present (14/10/2022).",
+    "subtitle":"Source: Yahoo Finance"  
   "subtitleFontStyle": "italic",
   "subtitleFontSize": 10,
   "anchor": "start",
