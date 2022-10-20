@@ -1863,7 +1863,7 @@
   "mark": "line",
   "encoding": {
     "x": {"field": "Date", "type": "temporal", "axis": {"labelAngle": 90}},
-    "y": {"field": "Close", "type": "quantitative", "title": "Closing Price"}
+    "y": {"field": "Close", "type": "quantitative", "title": "Closing Price", "scale":{"domain":[0,2]}}
   },
   "config": {}
 }
