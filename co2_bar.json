@@ -1,0 +1,1158 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {
+    "values": [
+      {
+        "Country": "Australia",
+        "Year": "1990",
+        "CO2 Emissions (kilotons)": 263630
+      },
+      {
+        "Country": "Australia",
+        "Year": "1991",
+        "CO2 Emissions (kilotons)": 264760
+      },
+      {
+        "Country": "Australia",
+        "Year": "1992",
+        "CO2 Emissions (kilotons)": 268400
+      },
+      {
+        "Country": "Australia",
+        "Year": "1993",
+        "CO2 Emissions (kilotons)": 273050
+      },
+      {
+        "Country": "Australia",
+        "Year": "1994",
+        "CO2 Emissions (kilotons)": 280180
+      },
+      {
+        "Country": "Australia",
+        "Year": "1995",
+        "CO2 Emissions (kilotons)": 290180
+      },
+      {
+        "Country": "Australia",
+        "Year": "1996",
+        "CO2 Emissions (kilotons)": 300810
+      },
+      {
+        "Country": "Australia",
+        "Year": "1997",
+        "CO2 Emissions (kilotons)": 307850
+      },
+      {
+        "Country": "Australia",
+        "Year": "1998",
+        "CO2 Emissions (kilotons)": 328620
+      },
+      {
+        "Country": "Australia",
+        "Year": "1999",
+        "CO2 Emissions (kilotons)": 333710
+      },
+      {
+        "Country": "Australia",
+        "Year": "2000",
+        "CO2 Emissions (kilotons)": 339450
+      },
+      {
+        "Country": "Australia",
+        "Year": "2001",
+        "CO2 Emissions (kilotons)": 345640
+      },
+      {
+        "Country": "Australia",
+        "Year": "2002",
+        "CO2 Emissions (kilotons)": 353369.9951
+      },
+      {
+        "Country": "Australia",
+        "Year": "2003",
+        "CO2 Emissions (kilotons)": 352579.9866
+      },
+      {
+        "Country": "Australia",
+        "Year": "2004",
+        "CO2 Emissions (kilotons)": 365809.9976
+      },
+      {
+        "Country": "Australia",
+        "Year": "2005",
+        "CO2 Emissions (kilotons)": 370089.9963
+      },
+      {
+        "Country": "Australia",
+        "Year": "2006",
+        "CO2 Emissions (kilotons)": 375489.9902
+      },
+      {
+        "Country": "Australia",
+        "Year": "2007",
+        "CO2 Emissions (kilotons)": 385750
+      },
+      {
+        "Country": "Australia",
+        "Year": "2008",
+        "CO2 Emissions (kilotons)": 388940.0024
+      },
+      {
+        "Country": "Australia",
+        "Year": "2009",
+        "CO2 Emissions (kilotons)": 395290.0085
+      },
+      {
+        "Country": "Australia",
+        "Year": "2010",
+        "CO2 Emissions (kilotons)": 387540.0085
+      },
+      {
+        "Country": "Australia",
+        "Year": "2011",
+        "CO2 Emissions (kilotons)": 386380.0049
+      },
+      {
+        "Country": "Australia",
+        "Year": "2012",
+        "CO2 Emissions (kilotons)": 386970.0012
+      },
+      {
+        "Country": "Australia",
+        "Year": "2013",
+        "CO2 Emissions (kilotons)": 380279.9988
+      },
+      {
+        "Country": "Australia",
+        "Year": "2014",
+        "CO2 Emissions (kilotons)": 371630.0049
+      },
+      {
+        "Country": "Australia",
+        "Year": "2015",
+        "CO2 Emissions (kilotons)": 377799.9878
+      },
+      {
+        "Country": "Australia",
+        "Year": "2016",
+        "CO2 Emissions (kilotons)": 384989.9902
+      },
+      {
+        "Country": "Australia",
+        "Year": "2017",
+        "CO2 Emissions (kilotons)": 389160.0037
+      },
+      {
+        "Country": "Australia",
+        "Year": "2018",
+        "CO2 Emissions (kilotons)": 387070.0073
+      },
+      {
+        "Country": "Australia",
+        "Year": "2019",
+        "CO2 Emissions (kilotons)": 386529.9988
+      },
+      {"Country": "Brazil", "Year": "1990", "CO2 Emissions (kilotons)": 197900},
+      {"Country": "Brazil", "Year": "1991", "CO2 Emissions (kilotons)": 205480},
+      {"Country": "Brazil", "Year": "1992", "CO2 Emissions (kilotons)": 207870},
+      {"Country": "Brazil", "Year": "1993", "CO2 Emissions (kilotons)": 215260},
+      {"Country": "Brazil", "Year": "1994", "CO2 Emissions (kilotons)": 222500},
+      {"Country": "Brazil", "Year": "1995", "CO2 Emissions (kilotons)": 241280},
+      {"Country": "Brazil", "Year": "1996", "CO2 Emissions (kilotons)": 262410},
+      {"Country": "Brazil", "Year": "1997", "CO2 Emissions (kilotons)": 281330},
+      {"Country": "Brazil", "Year": "1998", "CO2 Emissions (kilotons)": 290590},
+      {"Country": "Brazil", "Year": "1999", "CO2 Emissions (kilotons)": 300960},
+      {"Country": "Brazil", "Year": "2000", "CO2 Emissions (kilotons)": 313670},
+      {"Country": "Brazil", "Year": "2001", "CO2 Emissions (kilotons)": 319380},
+      {
+        "Country": "Brazil",
+        "Year": "2002",
+        "CO2 Emissions (kilotons)": 317760.0098
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2003",
+        "CO2 Emissions (kilotons)": 310809.9976
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2004",
+        "CO2 Emissions (kilotons)": 328519.989
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2005",
+        "CO2 Emissions (kilotons)": 331690.0024
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2006",
+        "CO2 Emissions (kilotons)": 335619.9951
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2007",
+        "CO2 Emissions (kilotons)": 352559.9976
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2008",
+        "CO2 Emissions (kilotons)": 373630.0049
+      },
+      {"Country": "Brazil", "Year": "2009", "CO2 Emissions (kilotons)": 350000},
+      {
+        "Country": "Brazil",
+        "Year": "2010",
+        "CO2 Emissions (kilotons)": 397929.9927
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2011",
+        "CO2 Emissions (kilotons)": 418309.9976
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2012",
+        "CO2 Emissions (kilotons)": 454230.011
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2013",
+        "CO2 Emissions (kilotons)": 486839.9963
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2014",
+        "CO2 Emissions (kilotons)": 511619.9951
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2015",
+        "CO2 Emissions (kilotons)": 485339.9963
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2016",
+        "CO2 Emissions (kilotons)": 447079.9866
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2017",
+        "CO2 Emissions (kilotons)": 456489.9902
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2018",
+        "CO2 Emissions (kilotons)": 433989.9902
+      },
+      {
+        "Country": "Brazil",
+        "Year": "2019",
+        "CO2 Emissions (kilotons)": 434299.9878
+      },
+      {"Country": "China", "Year": "1990", "CO2 Emissions (kilotons)": 2173360},
+      {"Country": "China", "Year": "1991", "CO2 Emissions (kilotons)": 2302180},
+      {"Country": "China", "Year": "1992", "CO2 Emissions (kilotons)": 2418180},
+      {"Country": "China", "Year": "1993", "CO2 Emissions (kilotons)": 2645410},
+      {"Country": "China", "Year": "1994", "CO2 Emissions (kilotons)": 2767670},
+      {"Country": "China", "Year": "1995", "CO2 Emissions (kilotons)": 3088620},
+      {"Country": "China", "Year": "1996", "CO2 Emissions (kilotons)": 3070510},
+      {"Country": "China", "Year": "1997", "CO2 Emissions (kilotons)": 3134110},
+      {"Country": "China", "Year": "1998", "CO2 Emissions (kilotons)": 3236280},
+      {"Country": "China", "Year": "1999", "CO2 Emissions (kilotons)": 3153660},
+      {"Country": "China", "Year": "2000", "CO2 Emissions (kilotons)": 3346530},
+      {"Country": "China", "Year": "2001", "CO2 Emissions (kilotons)": 3529080},
+      {
+        "Country": "China",
+        "Year": "2002",
+        "CO2 Emissions (kilotons)": 3810060.059
+      },
+      {
+        "Country": "China",
+        "Year": "2003",
+        "CO2 Emissions (kilotons)": 4415910.156
+      },
+      {
+        "Country": "China",
+        "Year": "2004",
+        "CO2 Emissions (kilotons)": 5124819.824
+      },
+      {
+        "Country": "China",
+        "Year": "2005",
+        "CO2 Emissions (kilotons)": 5824629.883
+      },
+      {
+        "Country": "China",
+        "Year": "2006",
+        "CO2 Emissions (kilotons)": 6437470.215
+      },
+      {
+        "Country": "China",
+        "Year": "2007",
+        "CO2 Emissions (kilotons)": 6993180.176
+      },
+      {
+        "Country": "China",
+        "Year": "2008",
+        "CO2 Emissions (kilotons)": 7199600.098
+      },
+      {
+        "Country": "China",
+        "Year": "2009",
+        "CO2 Emissions (kilotons)": 7719069.824
+      },
+      {
+        "Country": "China",
+        "Year": "2010",
+        "CO2 Emissions (kilotons)": 8474919.922
+      },
+      {
+        "Country": "China",
+        "Year": "2011",
+        "CO2 Emissions (kilotons)": 9282549.805
+      },
+      {
+        "Country": "China",
+        "Year": "2012",
+        "CO2 Emissions (kilotons)": 9541870.117
+      },
+      {
+        "Country": "China",
+        "Year": "2013",
+        "CO2 Emissions (kilotons)": 9984570.313
+      },
+      {
+        "Country": "China",
+        "Year": "2014",
+        "CO2 Emissions (kilotons)": 10006669.92
+      },
+      {
+        "Country": "China",
+        "Year": "2015",
+        "CO2 Emissions (kilotons)": 9861099.609
+      },
+      {
+        "Country": "China",
+        "Year": "2016",
+        "CO2 Emissions (kilotons)": 9874660.156
+      },
+      {
+        "Country": "China",
+        "Year": "2017",
+        "CO2 Emissions (kilotons)": 10096009.77
+      },
+      {
+        "Country": "China",
+        "Year": "2018",
+        "CO2 Emissions (kilotons)": 10502929.69
+      },
+      {
+        "Country": "China",
+        "Year": "2019",
+        "CO2 Emissions (kilotons)": 10707219.73
+      },
+      {
+        "Country": "Germany",
+        "Year": "1990",
+        "CO2 Emissions (kilotons)": 955310
+      },
+      {
+        "Country": "Germany",
+        "Year": "1991",
+        "CO2 Emissions (kilotons)": 932550
+      },
+      {
+        "Country": "Germany",
+        "Year": "1992",
+        "CO2 Emissions (kilotons)": 892820
+      },
+      {
+        "Country": "Germany",
+        "Year": "1993",
+        "CO2 Emissions (kilotons)": 887060
+      },
+      {
+        "Country": "Germany",
+        "Year": "1994",
+        "CO2 Emissions (kilotons)": 875900
+      },
+      {
+        "Country": "Germany",
+        "Year": "1995",
+        "CO2 Emissions (kilotons)": 874660
+      },
+      {
+        "Country": "Germany",
+        "Year": "1996",
+        "CO2 Emissions (kilotons)": 904340
+      },
+      {
+        "Country": "Germany",
+        "Year": "1997",
+        "CO2 Emissions (kilotons)": 872650
+      },
+      {
+        "Country": "Germany",
+        "Year": "1998",
+        "CO2 Emissions (kilotons)": 865250
+      },
+      {
+        "Country": "Germany",
+        "Year": "1999",
+        "CO2 Emissions (kilotons)": 833590
+      },
+      {
+        "Country": "Germany",
+        "Year": "2000",
+        "CO2 Emissions (kilotons)": 830280
+      },
+      {
+        "Country": "Germany",
+        "Year": "2001",
+        "CO2 Emissions (kilotons)": 847680
+      },
+      {
+        "Country": "Germany",
+        "Year": "2002",
+        "CO2 Emissions (kilotons)": 833380.0049
+      },
+      {
+        "Country": "Germany",
+        "Year": "2003",
+        "CO2 Emissions (kilotons)": 836789.978
+      },
+      {
+        "Country": "Germany",
+        "Year": "2004",
+        "CO2 Emissions (kilotons)": 821070.0073
+      },
+      {
+        "Country": "Germany",
+        "Year": "2005",
+        "CO2 Emissions (kilotons)": 802380.0049
+      },
+      {
+        "Country": "Germany",
+        "Year": "2006",
+        "CO2 Emissions (kilotons)": 814409.9731
+      },
+      {
+        "Country": "Germany",
+        "Year": "2007",
+        "CO2 Emissions (kilotons)": 783799.9878
+      },
+      {
+        "Country": "Germany",
+        "Year": "2008",
+        "CO2 Emissions (kilotons)": 789690.0024
+      },
+      {
+        "Country": "Germany",
+        "Year": "2009",
+        "CO2 Emissions (kilotons)": 734809.9976
+      },
+      {
+        "Country": "Germany",
+        "Year": "2010",
+        "CO2 Emissions (kilotons)": 773070.0073
+      },
+      {
+        "Country": "Germany",
+        "Year": "2011",
+        "CO2 Emissions (kilotons)": 746479.9805
+      },
+      {
+        "Country": "Germany",
+        "Year": "2012",
+        "CO2 Emissions (kilotons)": 760130.0049
+      },
+      {
+        "Country": "Germany",
+        "Year": "2013",
+        "CO2 Emissions (kilotons)": 776150.0244
+      },
+      {
+        "Country": "Germany",
+        "Year": "2014",
+        "CO2 Emissions (kilotons)": 736010.0098
+      },
+      {
+        "Country": "Germany",
+        "Year": "2015",
+        "CO2 Emissions (kilotons)": 742309.9976
+      },
+      {
+        "Country": "Germany",
+        "Year": "2016",
+        "CO2 Emissions (kilotons)": 747150.0244
+      },
+      {
+        "Country": "Germany",
+        "Year": "2017",
+        "CO2 Emissions (kilotons)": 732200.0122
+      },
+      {
+        "Country": "Germany",
+        "Year": "2018",
+        "CO2 Emissions (kilotons)": 707700.0122
+      },
+      {
+        "Country": "Germany",
+        "Year": "2019",
+        "CO2 Emissions (kilotons)": 657400.0244
+      },
+      {"Country": "Spain", "Year": "1990", "CO2 Emissions (kilotons)": 214950},
+      {"Country": "Spain", "Year": "1991", "CO2 Emissions (kilotons)": 222100},
+      {"Country": "Spain", "Year": "1992", "CO2 Emissions (kilotons)": 232370},
+      {"Country": "Spain", "Year": "1993", "CO2 Emissions (kilotons)": 218080},
+      {"Country": "Spain", "Year": "1994", "CO2 Emissions (kilotons)": 228450},
+      {"Country": "Spain", "Year": "1995", "CO2 Emissions (kilotons)": 240570},
+      {"Country": "Spain", "Year": "1996", "CO2 Emissions (kilotons)": 230110},
+      {"Country": "Spain", "Year": "1997", "CO2 Emissions (kilotons)": 248600},
+      {"Country": "Spain", "Year": "1998", "CO2 Emissions (kilotons)": 256220},
+      {"Country": "Spain", "Year": "1999", "CO2 Emissions (kilotons)": 278300},
+      {"Country": "Spain", "Year": "2000", "CO2 Emissions (kilotons)": 293310},
+      {"Country": "Spain", "Year": "2001", "CO2 Emissions (kilotons)": 294790},
+      {"Country": "Spain", "Year": "2002", "CO2 Emissions (kilotons)": 312750},
+      {
+        "Country": "Spain",
+        "Year": "2003",
+        "CO2 Emissions (kilotons)": 318660.0037
+      },
+      {
+        "Country": "Spain",
+        "Year": "2004",
+        "CO2 Emissions (kilotons)": 335559.9976
+      },
+      {"Country": "Spain", "Year": "2005", "CO2 Emissions (kilotons)": 350500},
+      {
+        "Country": "Spain",
+        "Year": "2006",
+        "CO2 Emissions (kilotons)": 341779.9988
+      },
+      {
+        "Country": "Spain",
+        "Year": "2007",
+        "CO2 Emissions (kilotons)": 354679.9927
+      },
+      {
+        "Country": "Spain",
+        "Year": "2008",
+        "CO2 Emissions (kilotons)": 324269.989
+      },
+      {
+        "Country": "Spain",
+        "Year": "2009",
+        "CO2 Emissions (kilotons)": 287489.9902
+      },
+      {"Country": "Spain", "Year": "2010", "CO2 Emissions (kilotons)": 273250},
+      {
+        "Country": "Spain",
+        "Year": "2011",
+        "CO2 Emissions (kilotons)": 274399.9939
+      },
+      {
+        "Country": "Spain",
+        "Year": "2012",
+        "CO2 Emissions (kilotons)": 269269.989
+      },
+      {
+        "Country": "Spain",
+        "Year": "2013",
+        "CO2 Emissions (kilotons)": 242809.9976
+      },
+      {
+        "Country": "Spain",
+        "Year": "2014",
+        "CO2 Emissions (kilotons)": 240960.0067
+      },
+      {
+        "Country": "Spain",
+        "Year": "2015",
+        "CO2 Emissions (kilotons)": 256279.9988
+      },
+      {
+        "Country": "Spain",
+        "Year": "2016",
+        "CO2 Emissions (kilotons)": 247029.9988
+      },
+      {
+        "Country": "Spain",
+        "Year": "2017",
+        "CO2 Emissions (kilotons)": 263450.0122
+      },
+      {
+        "Country": "Spain",
+        "Year": "2018",
+        "CO2 Emissions (kilotons)": 257040.0085
+      },
+      {
+        "Country": "Spain",
+        "Year": "2019",
+        "CO2 Emissions (kilotons)": 239979.9957
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "1990",
+        "CO2 Emissions (kilotons)": 561770
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "1991",
+        "CO2 Emissions (kilotons)": 570680
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "1992",
+        "CO2 Emissions (kilotons)": 557890
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "1993",
+        "CO2 Emissions (kilotons)": 541380
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "1994",
+        "CO2 Emissions (kilotons)": 535180
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "1995",
+        "CO2 Emissions (kilotons)": 526810
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "1996",
+        "CO2 Emissions (kilotons)": 545480
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "1997",
+        "CO2 Emissions (kilotons)": 524190
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "1998",
+        "CO2 Emissions (kilotons)": 526000
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "1999",
+        "CO2 Emissions (kilotons)": 522750
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2000",
+        "CO2 Emissions (kilotons)": 530890
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2001",
+        "CO2 Emissions (kilotons)": 545260
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2002",
+        "CO2 Emissions (kilotons)": 530789.978
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2003",
+        "CO2 Emissions (kilotons)": 543039.978
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2004",
+        "CO2 Emissions (kilotons)": 543080.0171
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2005",
+        "CO2 Emissions (kilotons)": 540919.9829
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2006",
+        "CO2 Emissions (kilotons)": 542059.9976
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2007",
+        "CO2 Emissions (kilotons)": 530500
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2008",
+        "CO2 Emissions (kilotons)": 515340.0269
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2009",
+        "CO2 Emissions (kilotons)": 466489.9902
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2010",
+        "CO2 Emissions (kilotons)": 482440.0024
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2011",
+        "CO2 Emissions (kilotons)": 445589.9963
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2012",
+        "CO2 Emissions (kilotons)": 467779.9988
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2013",
+        "CO2 Emissions (kilotons)": 453760.0098
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2014",
+        "CO2 Emissions (kilotons)": 415600.0061
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2015",
+        "CO2 Emissions (kilotons)": 401079.9866
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2016",
+        "CO2 Emissions (kilotons)": 380809.9976
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2017",
+        "CO2 Emissions (kilotons)": 367000
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2018",
+        "CO2 Emissions (kilotons)": 360730.011
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": "2019",
+        "CO2 Emissions (kilotons)": 348920.0134
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "1990",
+        "CO2 Emissions (kilotons)": 2163530
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "1991",
+        "CO2 Emissions (kilotons)": 2136440
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "1992",
+        "CO2 Emissions (kilotons)": 2030810
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "1993",
+        "CO2 Emissions (kilotons)": 1880250
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "1994",
+        "CO2 Emissions (kilotons)": 1685050
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "1995",
+        "CO2 Emissions (kilotons)": 1635490
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "1996",
+        "CO2 Emissions (kilotons)": 1601180
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "1997",
+        "CO2 Emissions (kilotons)": 1489510
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "1998",
+        "CO2 Emissions (kilotons)": 1487970
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "1999",
+        "CO2 Emissions (kilotons)": 1523720
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2000",
+        "CO2 Emissions (kilotons)": 1563850
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2001",
+        "CO2 Emissions (kilotons)": 1567170
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2002",
+        "CO2 Emissions (kilotons)": 1565339.966
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2003",
+        "CO2 Emissions (kilotons)": 1610000
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2004",
+        "CO2 Emissions (kilotons)": 1600979.98
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2005",
+        "CO2 Emissions (kilotons)": 1611979.98
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2006",
+        "CO2 Emissions (kilotons)": 1654849.976
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2007",
+        "CO2 Emissions (kilotons)": 1658150.024
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2008",
+        "CO2 Emissions (kilotons)": 1655189.941
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2009",
+        "CO2 Emissions (kilotons)": 1546670.044
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2010",
+        "CO2 Emissions (kilotons)": 1617829.956
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2011",
+        "CO2 Emissions (kilotons)": 1699089.966
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2012",
+        "CO2 Emissions (kilotons)": 1675760.01
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2013",
+        "CO2 Emissions (kilotons)": 1632680.054
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2014",
+        "CO2 Emissions (kilotons)": 1611959.961
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2015",
+        "CO2 Emissions (kilotons)": 1592560.059
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2016",
+        "CO2 Emissions (kilotons)": 1571520.02
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2017",
+        "CO2 Emissions (kilotons)": 1594550.049
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2018",
+        "CO2 Emissions (kilotons)": 1661000
+      },
+      {
+        "Country": "Russian Federation",
+        "Year": "2019",
+        "CO2 Emissions (kilotons)": 1703589.966
+      },
+      {"Country": "Sweden", "Year": "1990", "CO2 Emissions (kilotons)": 53350},
+      {"Country": "Sweden", "Year": "1991", "CO2 Emissions (kilotons)": 54240},
+      {"Country": "Sweden", "Year": "1992", "CO2 Emissions (kilotons)": 56750},
+      {"Country": "Sweden", "Year": "1993", "CO2 Emissions (kilotons)": 56500},
+      {"Country": "Sweden", "Year": "1994", "CO2 Emissions (kilotons)": 58490},
+      {"Country": "Sweden", "Year": "1995", "CO2 Emissions (kilotons)": 58230},
+      {"Country": "Sweden", "Year": "1996", "CO2 Emissions (kilotons)": 63650},
+      {"Country": "Sweden", "Year": "1997", "CO2 Emissions (kilotons)": 57380},
+      {"Country": "Sweden", "Year": "1998", "CO2 Emissions (kilotons)": 58360},
+      {"Country": "Sweden", "Year": "1999", "CO2 Emissions (kilotons)": 57260},
+      {"Country": "Sweden", "Year": "2000", "CO2 Emissions (kilotons)": 53280},
+      {"Country": "Sweden", "Year": "2001", "CO2 Emissions (kilotons)": 52500},
+      {
+        "Country": "Sweden",
+        "Year": "2002",
+        "CO2 Emissions (kilotons)": 54020.00046
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2003",
+        "CO2 Emissions (kilotons)": 55200.00076
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2004",
+        "CO2 Emissions (kilotons)": 53590.00015
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2005",
+        "CO2 Emissions (kilotons)": 50209.99908
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2006",
+        "CO2 Emissions (kilotons)": 48900.00153
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2007",
+        "CO2 Emissions (kilotons)": 47139.99939
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2008",
+        "CO2 Emissions (kilotons)": 46150.00153
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2009",
+        "CO2 Emissions (kilotons)": 42880.00107
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2010",
+        "CO2 Emissions (kilotons)": 48130.00107
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2011",
+        "CO2 Emissions (kilotons)": 44580.00183
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2012",
+        "CO2 Emissions (kilotons)": 42139.99939
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2013",
+        "CO2 Emissions (kilotons)": 40540.00092
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2014",
+        "CO2 Emissions (kilotons)": 39080.00183
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2015",
+        "CO2 Emissions (kilotons)": 39189.99863
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2016",
+        "CO2 Emissions (kilotons)": 38779.99878
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2017",
+        "CO2 Emissions (kilotons)": 38290.00092
+      },
+      {
+        "Country": "Sweden",
+        "Year": "2018",
+        "CO2 Emissions (kilotons)": 36009.99832
+      },
+      {"Country": "Sweden", "Year": "2019", "CO2 Emissions (kilotons)": 35000},
+      {
+        "Country": "United States",
+        "Year": "1990",
+        "CO2 Emissions (kilotons)": 4844520
+      },
+      {
+        "Country": "United States",
+        "Year": "1991",
+        "CO2 Emissions (kilotons)": 4807500
+      },
+      {
+        "Country": "United States",
+        "Year": "1992",
+        "CO2 Emissions (kilotons)": 4879630
+      },
+      {
+        "Country": "United States",
+        "Year": "1993",
+        "CO2 Emissions (kilotons)": 4995210
+      },
+      {
+        "Country": "United States",
+        "Year": "1994",
+        "CO2 Emissions (kilotons)": 5066810
+      },
+      {
+        "Country": "United States",
+        "Year": "1995",
+        "CO2 Emissions (kilotons)": 5117040
+      },
+      {
+        "Country": "United States",
+        "Year": "1996",
+        "CO2 Emissions (kilotons)": 5273490
+      },
+      {
+        "Country": "United States",
+        "Year": "1997",
+        "CO2 Emissions (kilotons)": 5543350
+      },
+      {
+        "Country": "United States",
+        "Year": "1998",
+        "CO2 Emissions (kilotons)": 5590540
+      },
+      {
+        "Country": "United States",
+        "Year": "1999",
+        "CO2 Emissions (kilotons)": 5609020
+      },
+      {
+        "Country": "United States",
+        "Year": "2000",
+        "CO2 Emissions (kilotons)": 5775810
+      },
+      {
+        "Country": "United States",
+        "Year": "2001",
+        "CO2 Emissions (kilotons)": 5748260
+      },
+      {
+        "Country": "United States",
+        "Year": "2002",
+        "CO2 Emissions (kilotons)": 5593029.785
+      },
+      {
+        "Country": "United States",
+        "Year": "2003",
+        "CO2 Emissions (kilotons)": 5658990.234
+      },
+      {
+        "Country": "United States",
+        "Year": "2004",
+        "CO2 Emissions (kilotons)": 5738290.039
+      },
+      {
+        "Country": "United States",
+        "Year": "2005",
+        "CO2 Emissions (kilotons)": 5753490.234
+      },
+      {
+        "Country": "United States",
+        "Year": "2006",
+        "CO2 Emissions (kilotons)": 5653080.078
+      },
+      {
+        "Country": "United States",
+        "Year": "2007",
+        "CO2 Emissions (kilotons)": 5736319.824
+      },
+      {
+        "Country": "United States",
+        "Year": "2008",
+        "CO2 Emissions (kilotons)": 5558379.883
+      },
+      {
+        "Country": "United States",
+        "Year": "2009",
+        "CO2 Emissions (kilotons)": 5156430.176
+      },
+      {
+        "Country": "United States",
+        "Year": "2010",
+        "CO2 Emissions (kilotons)": 5392109.863
+      },
+      {
+        "Country": "United States",
+        "Year": "2011",
+        "CO2 Emissions (kilotons)": 5173600.098
+      },
+      {
+        "Country": "United States",
+        "Year": "2012",
+        "CO2 Emissions (kilotons)": 4956060.059
+      },
+      {
+        "Country": "United States",
+        "Year": "2013",
+        "CO2 Emissions (kilotons)": 5092100.098
+      },
+      {
+        "Country": "United States",
+        "Year": "2014",
+        "CO2 Emissions (kilotons)": 5107209.961
+      },
+      {
+        "Country": "United States",
+        "Year": "2015",
+        "CO2 Emissions (kilotons)": 4990709.961
+      },
+      {
+        "Country": "United States",
+        "Year": "2016",
+        "CO2 Emissions (kilotons)": 4894500
+      },
+      {
+        "Country": "United States",
+        "Year": "2017",
+        "CO2 Emissions (kilotons)": 4819370.117
+      },
+      {
+        "Country": "United States",
+        "Year": "2018",
+        "CO2 Emissions (kilotons)": 4975310.059
+      },
+      {
+        "Country": "United States",
+        "Year": "2019",
+        "CO2 Emissions (kilotons)": 4817720.215
+      }
+    ]
+  },
+  "title": {
+    "text": "Annual CO2 Emmisions by Country (1990 - 2019)",
+    "subtitle": "Measured in kilotons (kt), Source: The World Bank"
+  },
+  "height": 300,
+  "mark": {"type": "bar", "cornerRadiusTopLeft": 3, "cornerRadiusTopRight": 3},
+  "encoding": {
+    "x": {"field": "Year", "type": "ordinal"},
+    "y": {"field": "CO2 Emissions (kilotons)", "aggregate": "sum"},
+    "color": {"field": "Country", "type": "nominal"}
+  },
+  "config": {}
+}

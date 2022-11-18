@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {
+    "values": [
+      {"Inflow": "Revenue", "Year": "2017", "US$ (millions)": "11758.75"},
+      {"Inflow": "Revenue", "Year": "2018", "US$ (millions)": "21461.27"},
+      {"Inflow": "Revenue", "Year": "2019", "US$ (millions)": "24578.00"},
+      {"Inflow": "Revenue", "Year": "2020", "US$ (millions)": "31536.00"},
+      {"Inflow": "Revenue", "Year": "2021", "US$ (millions)": "53823.00"},
+      {"Inflow": "Net Income", "Year": "2017", "US$ (millions)": "-1961.40"},
+      {"Inflow": "Net Income", "Year": "2018", "US$ (millions)": "-976.09"},
+      {"Inflow": "Net Income", "Year": "2019", "US$ (millions)": "-862.00"},
+      {"Inflow": "Net Income", "Year": "2020", "US$ (millions)": "690.00"},
+      {"Inflow": "Net Income", "Year": "2021", "US$ (millions)": "5519.00"}
+    ]
+  },
+  "title": {
+    "text": "Tesla Annual Revenue vs Net Income (2017 - 2021)",
+    "subtitle": "Measured in millions of US dollars, Source: Mornigstar"
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {"type": "bar"},
+  "encoding": {
+    "x": {"field": "Year"},
+    "y": {
+      "field": "US$ (millions)",
+      "type": "quantitative",
+      "scale": {"domain": [-5000, 55000]}
+    },
+    "xOffset": {"field": "Inflow"},
+    "color": {"field": "Inflow"}
+  },
+  "config": {}
+}
