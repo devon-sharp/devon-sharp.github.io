@@ -10,7 +10,7 @@
 9,Canada,21.83
 10,Fiji,22.5
 11,Greece,23.67
-12,United States,23.83
+12,United States of America,23.83
 13,Oman,24.33
 14,Uganda,24.67
 15,Tonga,25.17
@@ -20,15 +20,13 @@
 19,Lithuania,29.33
 20,Nepal,29.67
 21,Italy,33.67
-22,"Lao People's Democratic Re-
-public",35.5
+22,Laos,35.5
 23,Uruguay,35.67
-24,"Islamic Republic of Afghani-
-stan",36
+24,Afghanistan,36
 25,Burundi,36.33
 26,Mexico,37.67
 27,Niger,39.67
-28,Republic of Yemen,41.33
+28,Yemen,41.33
 29,Solomon Islands,43.17
 30,El Salvador,44.33
 31,Djibouti,44.67
@@ -60,7 +58,7 @@ stan",36
 57,Ethiopia,62.83
 57,Kuwait,62.83
 59,Bolivia,63.5
-60,Islamic Republic of Iran,64.83
+60,Iran,64.83
 61,Serbia,65.5
 62,Lebanon,67.17
 62,Netherlands,67.17
@@ -68,21 +66,21 @@ stan",36
 65,Ghana,68.33
 66,Iraq,68.5
 67,Thailand,68.83
-68,Democratic Republic of Congo,69.83
+68,Republic of the Congo,69.83
 68,Tanzania,69.83
 70,Grenada,70.5
 70,Samoa,70.5
 72,Portugal,70.67
 73,Central African Republic,71.17
 73,Tajikistan,71.17
-75,Chinese Taipei,72.33
+75,Taiwan,72.33
 76,Cyprus,73.5
 77,Switzerland,73.67
 78,United Kingdom,73.83
 79,Russia,75.5
 80,Angola,76
 81,Ireland,76.5
-81,"Korea, Republic of",76.5
+81,South Korea,76.5
 83,Guatemala,77.33
 84,Mauritius,78.83
 85,Namibia,79.17
@@ -102,11 +100,11 @@ stan",36
 99,Dominican Republic,86.5
 100,Pakistan,87.83
 101,Benin,88
-102,Slovak Republic,88.33
+102,Slovakia,88.33
 103,Saudi Arabia,88.5
 104,Haiti,88.67
 105,Sweden,89
-106,Côte d'Ivoire,89.5
+106,Cote d'Ivoire,89.5
 106,Israel,89.5
 108,Estonia,90.5
 109,Algeria,93.83
@@ -143,13 +141,12 @@ stan",36
 135,Belize,125
 135,Bhutan,125
 135,Botswana,125
-135,Brunei Darussalam,125
+135,Brunei,125
 135,Burkina Faso,125
 135,Cape Verde,125
 135,Chad,125
 135,Comoros,125
-135,"Democratic Republic of Ti-
-mor-Leste",125
+135,Timor-Leste,125
 135,Dominica,125
 135,Eritrea,125
 135,Finland,125
@@ -176,11 +173,10 @@ mor-Leste",125
 135,Singapore,125
 135,St. Kitts and Nevis,125
 135,St. Lucia,125
-135,"St. Vincent and the Grena-
-dines",125
+135,"St. Vincent and the Grenadines",125
 135,Suriname,125
 135,The Bahamas,125
-135,The Gambia,125
+135,Gambia,125
 135,Togo,125
 135,Tuvalu,125
 135,United Arab Emirates,125
