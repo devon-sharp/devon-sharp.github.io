@@ -33,7 +33,7 @@
 31,Vanuatu,44.67
 33,China,45.17
 34,France,46.17
-35,Czech Republic,46.83
+35,Czechia,46.83
 35,Tunisia,46.83
 37,Guinea-Bissau,47.5
 38,Cambodia,47.67
@@ -66,12 +66,12 @@
 65,Ghana,68.33
 66,Iraq,68.5
 67,Thailand,68.83
-68,Democratic Republic of the Congo,69.83
+68,Dem. Rep. Congo,69.83
 68,Tanzania,69.83
 70,Grenada,70.5
 70,Samoa,70.5
 72,Portugal,70.67
-73,Central African Republic,71.17
+73,Central African Rep.,71.17
 73,Tajikistan,71.17
 75,Taiwan,72.33
 76,Cyprus,73.5
@@ -97,7 +97,7 @@
 96,Costa Rica,84.67
 97,Malaysia,84.83
 98,Bangladesh,85.5
-99,Dominican Republic,86.5
+99,Dominican Rep.,86.5
 100,Pakistan,87.83
 101,Benin,88
 102,Slovakia,88.33
@@ -131,8 +131,8 @@
 130,Belarus,111.83
 131,Egypt,113.67
 132,Zimbabwe,114.5
-133,South Sudan,116
-134,Kyrgyz Republic,117.5
+133,S. Sudan,116
+134,Kyrgyzstan,117.5
 135,Antigua and Barbuda,125
 135,Armenia,125
 135,Azerbaijan,125
@@ -167,7 +167,7 @@
 135,North Macedonia,125
 135,Papua New Guinea,125
 135,Qatar,125
-135,Republic of the Congo,125
+135,Congo,125
 135,Seychelles,125
 135,Sierra Leone,125
 135,Singapore,125
