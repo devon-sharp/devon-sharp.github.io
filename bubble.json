@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Agricultural land vs absolute poverty rates",
+    "subtitle": [
+      "Agricultural land (% of land area)(x), Percent of population living in absolute poverty (y)",
+      "Size of points based on Gini Coefficient. Source: World Bank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 500,
+  "width": 650,
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/devon-sharp/devon-sharp.github.io/main/bubble_data3.csv",
+    "format": {"type": "csv"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "circle", "color": "green", "opacity": 0.7},
+      "encoding": {
+        "x": {
+          "field": "Agriculture",
+          "type": "quantitative",
+          "scale": {"domain": [0, 85]},
+          "axis": {"grid": false},
+          "title": "Agricultural land (% of land area)"
+        },
+        "y": {
+          "field": "Poverty",
+          "type": "quantitative",
+          "scale": {"domain": [0, 45]},
+          "axis": {"grid": false},
+          "title": "% of population living in absolute poverty ($2.15 a day, 2017 PPP)"
+        },
+        "size": {
+          "field": "Gini",
+          "type": "quantitative",
+          "title": "Gini Coefficient",
+          "scale": {"range": [-500, 500]},
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "Country", "type": "ordinal", "title": "Country"},
+          {
+            "field": "Poverty",
+            "type": "quantitative",
+            "title": "% of population living in absolute poverty",
+            "format": ".2f"
+          },
+          {
+            "field": "Agriculture",
+            "type": "quantitative",
+            "title": "Agricultural land (%)",
+            "format": ".0f"
+          },
+          {
+            "field": "Gini",
+            "type": "quantitative",
+            "title": "Gini coefficient",
+            "format": ","
+          },
+          {
+            "field": "GDP",
+            "type": "quantitative",
+            "title": "GDP per capita (US$)",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "purple"},
+      "transform": [{"regression": "Poverty", "on": "Agriculture"}],
+      "encoding": {
+        "y": {"field": "Poverty", "type": "quantitative"},
+        "x": {"field": "Agriculture", "type": "quantitative"}
+      }
+    }
+  ]
+}

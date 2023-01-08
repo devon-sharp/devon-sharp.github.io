@@ -1148,6 +1148,7 @@
     "subtitle": "Measured in kilotons (kt), Source: The World Bank"
   },
   "height": 360,
+  "width": 360,
   "mark": {"type": "line", "point": false},
   "encoding": {
     "x": {"field": "Year"},

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Total US Patent Applications (1963 - 2020)",
+    "subtitle": "Patent applications are considered an accurate indicator of innovation. Source: U.S. Patent and Trademark Office"
+  },
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1963,
+      "bind": {
+        "input": "range",
+        "min": 1963,
+        "max": 2020,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2020,
+      "bind": {
+        "input": "range",
+        "min": 1963,
+        "max": 2020,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "width": 600,
+  "height": 500,
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {"Year": 2020, "Total Patent Applications": 646244},
+          {"Year": 2019, "Total Patent Applications": 669434},
+          {"Year": 2018, "Total Patent Applications": 643303},
+          {"Year": 2017, "Total Patent Applications": 651355},
+          {"Year": 2016, "Total Patent Applications": 649319},
+          {"Year": 2015, "Total Patent Applications": 629647},
+          {"Year": 2014, "Total Patent Applications": 615243},
+          {"Year": 2013, "Total Patent Applications": 609052},
+          {"Year": 2012, "Total Patent Applications": 576763},
+          {"Year": 2011, "Total Patent Applications": 535188},
+          {"Year": 2010, "Total Patent Applications": 520277},
+          {"Year": 2009, "Total Patent Applications": 482871},
+          {"Year": 2008, "Total Patent Applications": 485312},
+          {"Year": 2007, "Total Patent Applications": 484955},
+          {"Year": 2006, "Total Patent Applications": 452633},
+          {"Year": 2005, "Total Patent Applications": 417508},
+          {"Year": 2004, "Total Patent Applications": 382139},
+          {"Year": 2003, "Total Patent Applications": 366043},
+          {"Year": 2002, "Total Patent Applications": 356493},
+          {"Year": 2001, "Total Patent Applications": 345732},
+          {"Year": 2000, "Total Patent Applications": 315015},
+          {"Year": 1999, "Total Patent Applications": 288811},
+          {"Year": 1998, "Total Patent Applications": 260889},
+          {"Year": 1997, "Total Patent Applications": 232424},
+          {"Year": 1996, "Total Patent Applications": 211013},
+          {"Year": 1995, "Total Patent Applications": 228238},
+          {"Year": 1994, "Total Patent Applications": 206090},
+          {"Year": 1993, "Total Patent Applications": 188739},
+          {"Year": 1992, "Total Patent Applications": 186507},
+          {"Year": 1991, "Total Patent Applications": 177830},
+          {"Year": 1990, "Total Patent Applications": 176264},
+          {"Year": 1989, "Total Patent Applications": 165748},
+          {"Year": 1988, "Total Patent Applications": 151491},
+          {"Year": 1987, "Total Patent Applications": 139455},
+          {"Year": 1986, "Total Patent Applications": 132665},
+          {"Year": 1985, "Total Patent Applications": 126788},
+          {"Year": 1984, "Total Patent Applications": 120276},
+          {"Year": 1983, "Total Patent Applications": 112040},
+          {"Year": 1982, "Total Patent Applications": 117987},
+          {"Year": 1981, "Total Patent Applications": 113966},
+          {"Year": 1980, "Total Patent Applications": 112379},
+          {"Year": 1979, "Total Patent Applications": 108209},
+          {"Year": 1978, "Total Patent Applications": 108648},
+          {"Year": 1977, "Total Patent Applications": 108377},
+          {"Year": 1976, "Total Patent Applications": 109580},
+          {"Year": 1975, "Total Patent Applications": 107456},
+          {"Year": 1974, "Total Patent Applications": 108011},
+          {"Year": 1973, "Total Patent Applications": 109622},
+          {"Year": 1972, "Total Patent Applications": 105300},
+          {"Year": 1971, "Total Patent Applications": 111095},
+          {"Year": 1970, "Total Patent Applications": 109359},
+          {"Year": 1969, "Total Patent Applications": 104357},
+          {"Year": 1968, "Total Patent Applications": 98737},
+          {"Year": 1967, "Total Patent Applications": 90544},
+          {"Year": 1966, "Total Patent Applications": 93482},
+          {"Year": 1965, "Total Patent Applications": 100150},
+          {"Year": 1964, "Total Patent Applications": 92971},
+          {"Year": 1963, "Total Patent Applications": 90982}
+        ]
+      },
+      "transform": [
+        {"filter": "datum.Year>=minYear"},
+        {"filter": "datum.Year<=maxYear"}
+      ],
+      "mark": {"type": "line", "point": true},
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "nominal",
+          "title": "Year of Application or Grant"
+        },
+        "y": {"field": "Total Patent Applications", "type": "quantitative"},
+        "tooltip": [
+          {
+            "field": "Year",
+            "type": "nominal",
+            "title": "Year of Application or Grant"
+          },
+          {"field": "Total Patent Applications", "type": "quantitative"}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}

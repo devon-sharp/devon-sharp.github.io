@@ -1147,7 +1147,8 @@
     "text": "Annual CO2 Emmisions by Country (1990 - 2019)",
     "subtitle": "Measured in kilotons (kt), Source: The World Bank"
   },
-  "height": 300,
+  "height": 360,
+  "width": 360,
   "mark": {"type": "bar", "cornerRadiusTopLeft": 3, "cornerRadiusTopRight": 3},
   "encoding": {
     "x": {"field": "Year", "type": "ordinal"},

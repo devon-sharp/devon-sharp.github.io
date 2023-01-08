@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {"Inflow": "Revenue", "Year": "2017", "US$ (millions)": "11758.75"},
+      {"Inflow": "Revenue", "Year": "2018", "US$ (millions)": "21461.27"},
+      {"Inflow": "Revenue", "Year": "2019", "US$ (millions)": "24578.00"},
+      {"Inflow": "Revenue", "Year": "2020", "US$ (millions)": "31536.00"},
+      {"Inflow": "Revenue", "Year": "2021", "US$ (millions)": "53823.00"},
+      {"Inflow": "Net Income", "Year": "2017", "US$ (millions)": "-1961.40"},
+      {"Inflow": "Net Income", "Year": "2018", "US$ (millions)": "-976.09"},
+      {"Inflow": "Net Income", "Year": "2019", "US$ (millions)": "-862.00"},
+      {"Inflow": "Net Income", "Year": "2020", "US$ (millions)": "690.00"},
+      {"Inflow": "Net Income", "Year": "2021", "US$ (millions)": "5519.00"}
+    ]
+  },
+  "width": {"step": 25},
+  "height": 275,
+  "padding": 5,
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "Year",
+      "type": "ordinal",
+      "spacing": -1,
+      "title": "Year",
+      "header": {"labelOrient": "top", "titleOrient": "top"}
+    },
+    "y": {
+      "field": "US$ (millions)",
+      "type": "quantitative",
+      "title": "US$ (millions)"
+
+    },
+    "x": {
+      "field": "Inflow",
+      "axis": {"title": "", "labelColor": "white", "ticks": false}
+    },
+    "color": {
+      "field": "Inflow",
+      "legend": {"orient": "right"},
+      "scale": {"range": ["black", "#DC143C"]}
+    }
+  },
+  "title": {
+    "text": "Tesla Annual Revenue vs Net Income (2017 - 2021)",
+    "subtitle": ["Measured in millions of US dollars, Source: Morningstar",
+    ""],
+    "anchor": "middle"
+  },
+  "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}}
+}

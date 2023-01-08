@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Agricultural land vs Gini Coeffeicient",
+    "subtitle": [
+      "Gini Coefficient (x), Agricultural land (% of land area) 2018 data (y)",
+      "Size of points based on CO2 emissions",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 500,
+  "width": 650,
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/devon-sharp/devon-sharp.github.io/main/ghg_gini_gdp3.csv",
+    "format": {"type": "csv"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "circle", "color": "green", "opacity": 0.7},
+      "encoding": {
+        "x": {
+          "field": "Gini Coefficient",
+          "type": "quantitative",
+          "scale": {"domain": [15, 65]},
+          "axis": {"grid": false},
+          "title": "Gini Coefficient"
+        },
+        "y": {
+          "field": "Agricultural land (% of land area)",
+          "type": "quantitative",
+          "scale": {"domain": [0, 100]},
+          "axis": {"grid": false},
+          "title": "Agricultural land (% of land area)"
+        },
+        "size": {
+          "field": "CO2 emissions (kilotons)",
+          "type": "quantitative",
+          "title": "CO2 Emissions",
+          "scale": {"range": [8, 3000]},
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "Country Name", "type": "ordinal", "title": "Country"},
+          {
+            "field": "Gini Coefficient",
+            "type": "quantitative",
+            "title": "Gini Coefficient",
+            "format": ".0f"
+          },
+          {
+          "field": "Agricultural land (% of land area)",
+          "type": "quantitative",
+          "title": "Agricultural land (%)",
+          "format": ".0f"
+          },
+          {
+            "field": "CO2 emissions (kilotons)",
+            "type": "quantitative",
+            "title": "CO2 emissions (kilotons)",
+            "format": ","
+          },
+          {
+            "field": "GDP Per Capita (Current US$)",
+            "type": "quantitative",
+            "title": "GDP per capita (US$)",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "purple"},
+      "transform": [
+        {
+          "regression": "Agricultural land (% of land area)",
+          "on": "Gini Coefficient"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "Agricultural land (% of land area)",
+          "type": "quantitative"
+        },
+        "x": {"field": "Gini Coefficient", "type": "quantitative"}
+      }
+    }
+  ]
+}

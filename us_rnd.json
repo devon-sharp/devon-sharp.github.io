@@ -1,0 +1,108 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A basic bar chart example, with value labels shown upon mouse hover.",
+  "width": 600,
+  "height": 400,
+  "padding": 10,
+  "title": {
+    "text": "US Research and Development Expenditure (% of GDP), 1996-2020",
+    "subtitle": [
+      "R&D expenditure rose before, then fell notably, after both the dot-com bubble and the GFC.",
+      "The latter would hinder innovation. Source: The World Bank"
+    ],
+    "anchor": "middle"
+  },
+  "data": [
+    {
+      "name": "table",
+      "values": [
+        {"Year": "'96", "RnD": 2.450010061},
+        {"Year": "'97", "RnD": 2.479830027},
+        {"Year": "'98", "RnD": 2.504009962},
+        {"Year": "'99", "RnD": 2.549649954},
+        {"Year": "'00", "RnD": 2.628789902},
+        {"Year": "'01", "RnD": 2.648299932},
+        {"Year": "'02", "RnD": 2.559259892},
+        {"Year": "'03", "RnD": 2.564549923},
+        {"Year": "'04", "RnD": 2.502429962},
+        {"Year": "'05", "RnD": 2.516969919},
+        {"Year": "'06", "RnD": 2.557640076},
+        {"Year": "'07", "RnD": 2.631609917},
+        {"Year": "'08", "RnD": 2.767910004},
+        {"Year": "'09", "RnD": 2.812700033},
+        {"Year": "'10", "RnD": 2.735399961},
+        {"Year": "'11", "RnD": 2.765249968},
+        {"Year": "'12", "RnD": 2.681659937},
+        {"Year": "'13", "RnD": 2.711539984},
+        {"Year": "'14", "RnD": 2.721509933},
+        {"Year": "'15", "RnD": 2.782059908},
+        {"Year": "'16", "RnD": 2.845849991},
+        {"Year": "'17", "RnD": 2.895720005},
+        {"Year": "'18", "RnD": 3.000819921},
+        {"Year": "'19", "RnD": 3.166090012},
+        {"Year": "'20", "RnD": 3.450180054}
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "tooltip",
+      "value": {},
+      "on": [
+        {"events": "rect:mouseover", "update": "datum"},
+        {"events": "rect:mouseout", "update": "{}"}
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "xscale",
+      "type": "band",
+      "domain": {"data": "table", "field": "Year"},
+      "range": "width",
+      "padding": 0.05,
+      "round": true
+    },
+    {"name": "yscale", "domain": [0, 3.5], "range": "height"}
+  ],
+  "axes": [
+    {"orient": "bottom", "scale": "xscale", "labelAngle": 0},
+    {"orient": "left", "scale": "yscale", "title": "% of GDP"}
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "from": {"data": "table"},
+      "encode": {
+        "enter": {
+          "x": {"scale": "xscale", "field": "Year"},
+          "width": {"scale": "xscale", "band": 1},
+          "y": {"scale": "yscale", "field": "RnD"},
+          "y2": {"scale": "yscale", "value": 0}
+        },
+        "update": {"fill": {"value": "#96DED1"}},
+        "hover": {"fill": {"value": "red"}}
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "align": {"value": "center"},
+          "baseline": {"value": "bottom"},
+          "fill": {"value": "#333"}
+        },
+        "update": {
+          "x": {"scale": "xscale", "signal": "tooltip.Year", "band": 0.5},
+          "y": {"scale": "yscale", "signal": "tooltip.RnD", "offset": -2},
+          "text": {"signal": "tooltip.RnD"},
+          "fillOpacity": [
+            {"test": "datum === tooltip", "value": 0},
+            {"value": 1}
+          ]
+        }
+      }
+    }
+  ],
+  "config": {}
+}

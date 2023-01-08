@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/devon-sharp/devon-sharp.github.io/main/world_geojson.json",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "equalEarth"},
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/devon-sharp/devon-sharp.github.io/main/climate_risk_index.csv"
+        },
+        "key": "Country",
+        "fields": ["CRIscore", "CRIRank"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "darkgray", "strokeWidth": 0.5},
+  "title": {
+    "text": "2018 Climate Risk Index (CRI) Map",
+    "subtitle": "Lower index scores indicate countries with higher risk from extreme climate. Source: Germanwatch",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "encoding": {
+    "color": {
+      "field": "CRIscore",
+      "type": "quantitative",
+      "scale": {"scheme": "darkred"},
+      "title": "CRI Score"
+    },
+    "tooltip": [
+      {"field": "properties.name", "title": "Country"},
+      {"field": "CRIscore", "title": "CRI"},
+      {"field": "CRIRank", "title": "CRI Global Ranking"}
+    ]
+  },
+  "config": {}
+}

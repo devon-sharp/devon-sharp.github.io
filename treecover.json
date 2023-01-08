@@ -1,0 +1,35 @@
+{
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/devon-sharp/devon-sharp.github.io/main/tree_fires4.csv"
+  },
+  "title": {
+    "text": "Composition of Global Tree Cover Loss (2001 - 2021)",
+    "subtitle": ["Source: Global Forest Watch", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "timeUnit": "yearmonth",
+      "field": "Year",
+      "title": null,
+      "axis": {"format": "%Y"}
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Values",
+      "title": "(Millions of Hectares)"
+    },
+    "color": {
+      "field": "Series",
+      "scale": {"scheme": "greens"},
+      "title": "Tree Cover Loss"
+    }
+  },
+  "config": {}
+}

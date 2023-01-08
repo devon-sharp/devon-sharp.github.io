@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Inflation - comparing three measures",
-    "subtitle": "CPI, CPIH and RPI, percentage change, 12-months, 1948-present",
+    "text": "Comparing Three Measures of Inflation",
+    "subtitle": "12-Month % change in: CPI, CPIH and RPI. (1948-2021)",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",

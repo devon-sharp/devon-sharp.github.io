@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/devon-sharp/devon-sharp.github.io/main/net_changes_gigatonne_adjusted.csv"
+  },
+  "title": {
+    "text": "Annual Net Changes in Ice Sheet and Sea Levels (1993-2014)",
+    "subtitle": ["Sources: British Antarctic Survey, Data Hub", ""]
+  },
+  "transform": [
+    {
+      "fold": [
+        "Change in sea level ",
+        "Change in Antarctic and Greenland ice sheet mass"
+      ],
+      "as": ["effect", "change"]
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {"type": "line", "strokeWidth": 4},
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "change",
+      "type": "quantitative",
+      "title": "Gigatonnes Per Year",
+      "axis": {"grid": true}
+    },
+    "tooltip": [
+      {"field": "Year", "type": "temporal", "title": "Year"},
+      {
+        "field": "change",
+        "type": "quantitative",
+        "title": "Gt per year",
+        "format": ","
+      }
+    ],
+    "color": {
+      "field": "effect",
+      "legend": null,
+      "scale": {"range": ["purple", "green"]}
+    },
+    "facet": {"field": "effect", "columns": 2, "title": null}
+  },
+  "resolve": {"scale": {"y": "independent"}},
+  "config": {}
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Devon Sharp Data Science</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+
+<body>
+    <div class="myWeek1">
+        
+        <h1>Data Science 2022 - Devon Sharp</h1>
+
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="https://github.com/devon-sharp">GitHub</a>
+
+   
+        <h1>My Project</h1>
+        <h2>The Unequal Effects of Global Warming – How Does Climate Change Disproportionately Impact Low-Income Countries?</h2>
+        <h4>Aims:</h4>
+        <p>The alteration of climate patterns has resulted in a rise in sea levels and a greater frequency and severity of meteorological events, such as heatwaves and droughts. These changes have had detrimental effects on ecosystems, agricultural output, human health, and means of sustenance. The objective of this project is to find and visualise data that discerns which countries are most affected by these changes and how they will affect the economies of those nations. </p>
+        <h4>Findings:</h4>
+
+        <p>Evidence of climate change... </p>
+        <div class="charta" id="chart1"> </div>
+        <p>Chart 1: treecover.json</p>
+        <div class="chartb" id="chart2"> </div>
+        <p>Chart 2: ice_sea.json</p>
+
+        <p>The CRI identifies the extent to which countries have been affected by extreme weather events. In the map below, we can see that Central Africa, large parts of Asia, and also North America have been heavily affected by extreme weather, which is a result of climate change. The 5 most affected countries in 2018 were: Japan, Philippines, Germany, Madagascar, India.</p>
+        <div class="chartc" id="chart3"> </div>
+        <p>Chart 3: cri_map.json</p>
+        
+
+        <p>Altered rainfall patterns and reduced availability of irrigation water pose a significant risk to agricultural production, particularly in regions where water resources are already scarce. Drought-stricken soil will hinder the growth of crops, pasture, and trees. In the poorest countries, a significant portion of the population relies heavily on sectors, such as agriculture, forestry, and fisheries, which are particularly vulnerable to the impacts of climate change.</p>
+        <div class="chartd" id="chart4"> </div>
+        <p>Chart 4: agri_gdp.json</p>
+        <p>The red lines in Chart 3 indicate the sample means. This chart clearly illustrates that countries whose economies depend more heavily on agriculture also tend to have below-average GDP’s. Thus it is intuitive to assume that if extreme weather worsens, damaging agriculture, lower income countries will be effected disproportionately.</p>
+        <div class="charte" id="chart5"> </div>
+        <p>Chart 5: bubble.json</p>
+        <p>As you can see, there is a positive relationship between poverty rate and proportion of agricultural land. If very poor countries' economies, which are more reliant on agriculture, are disproportionately affected by climate change this will only further exacerbate pre-existing cross-country inequalities, and potentially send more people into poverty.</p>
+
+        <p>Although many of the extreme weather events that are connected to global warming do not discriminate based on a country's income or GDP, higher-income countries generally have more resources to cope with the inevitable impacts of climate change. Low-income countries do not have this same level of resources. Oftentimes, the poorest populations do not have access to insurance mechanisms or basic infrastructure or health services, making them particularly vulnerable to any shocks that may affect their assets and sources of income.</p>
+        <div class="chartf" id="chart6"> </div>
+        <p>Chart 6: insurance.json</p>
+        <p>As shown in Chart 6, low income countries such as Indonesia and Tunisia - which are also heavily prone to the effects of climate change - have smaller insurance markets. This means that if, for example, a Brazilian farmer receives a negative income shock from extreme weather, they are less likely to be able to recover as well as a farmer in a developed nation such as the US, who is more likely to be insured.</p>
+
+        <h4>Data Used:</h4>
+        <p>All of my charts used different data sources, all of which are reputable and reliable, each is included in my chart subtitles. Almost all of the data I used was accessed in csv form from their respective websites. For Chart 3, I utilised a scraping algorithm to extract and clean the data from Wikipedia. </p>
+        <p><a class="sources" href="https://colab.research.google.com/drive/1k-8J0VvZEpuNzWflhA3VVQvtUa8KR45F?usp=sharing">Scraper Link</a></p>
+        
+        <h4>Challenges:</h4>
+        <p>For some of the World Bank data I had downloaded, there wasn’t matching data for every country. To overcome this I used the ‘df.drop(na)’ function in Python to clean the data before exporting to Excel. Once in excel, I validated the cleaning by using the ‘VLOOKUP’ function and filter tool to ensure my data matched.
+            In order for the Chart 2 to work, I had to standardise the y-axes. To do this I had to calculate how much a 1mm sea level rise would equate to in gigatonnes. Using sea-surface area data, I came to an estimation of 1mm rise = 361.8Gt. I then converted my ‘mm’ values to ‘Gt’ using excel.</p>
+
+        <h4>Conclusion:</h4>
+        <p>To conclude, through visualising the data it is clear that low income countries (especially those near the equator or with large exposure to the sea) are more prone to feel the impacts of climate change. These economies are more significantly exposed to global warming primarily due to their reliance on agriculture and lack of infrastructure. Global warming could push the inhabitants of these countries into poverty, increasing global inequality. </p>
+        
+
+    </div> 
+</body>
+
+<script>
+    var myChart1 = "treecover.json";
+    var myChart2 = "ice_sea.json";
+    var myChart3 = "cri_map.json";
+    var myChart4 = "agri_gdp.json";
+    var myChart5 = "bubble.json";
+    var myChart6 = "insurance.json";
+    
+
+
+    vegaEmbed('#chart1', myChart1);
+    vegaEmbed('#chart2', myChart2);
+    vegaEmbed('#chart3', myChart3);
+    vegaEmbed('#chart4', myChart4);
+    vegaEmbed('#chart5', myChart5);
+    vegaEmbed('#chart6', myChart6);
+
+
+</script>
+</html>

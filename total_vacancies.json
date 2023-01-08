@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/devon-sharp/devon-sharp.github.io/main/ONS-AP2Y.json",
+    "format": {"type": "json", "property": "years"}
+  },
+  "transform": [{"calculate": "datum.value/1", "as": "thousands"}],
+  "mark": {"type": "line", "strokeWidth": 2.5, "opacity": 1},
+  "title": {
+    "text": "Total UK Job Vacancies",
+    "subtitle": "(2002 - 2022) Seasonally adjusted. Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 240,
+  "height": 240,
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": null,
+      "axis": {"labelAlign": "center"}
+    },
+    "y": {
+      "field": "thousands",
+      "type": "quantitative",
+      "title": "Job Vacancies (thousands)"
+    }
+  },
+  "config": {}
+}

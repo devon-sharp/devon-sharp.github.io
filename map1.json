@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/devon-sharp/devon-sharp.github.io/main/london_boroughs.json",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "equalEarth"},
+  "mark": {
+    "type": "geoshape",
+    "fill": "skyblue",
+    "stroke": "black",
+    "strokeWidth": 0.5
+  },
+  "title": {
+    "text": "Boroughs of London",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "encoding": {"tooltip": {"field": "properties.name"}},
+  "config": {}
+}

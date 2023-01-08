@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/devon-sharp/devon-sharp.github.io/main/london_boroughs.json",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "equalEarth"},
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/devon-sharp/devon-sharp.github.io/main/ldn_emsissions2.csv"
+        },
+        "key": "Borough",
+        "fields": ["Total CO2 Emissions"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5},
+  "title": {
+    "text": "CO2 Emissions of Each London Borough (tonnes per annum)",
+    "subtitle": "Source: London Data Store",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "encoding": {
+    "color": {"field": "Total CO2 Emissions", "type": "quantitative"},
+    "tooltip": [
+      {"field": "properties.name", "title": "Borough"},
+      {"field": "Total CO2 Emissions", "title": "Emissions (tonnes)"}
+    ]
+  },
+  "config": {}
+}

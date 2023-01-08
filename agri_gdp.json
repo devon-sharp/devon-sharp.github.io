@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Real GDP & Reliance on Agriculture",
+    "subtitle": [
+      "Sample includes data for every country. Red lines represent; the sample mean of agriculture as a % of gdp (x), and",
+      "the sample mean of real GDP (y).",
+      "Source: Wikipedia",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/devon-sharp/devon-sharp.github.io/main/agri_pp3.csv",
+    "format": {"type": "csv"}
+  },
+  "height": 400,
+  "width": 500,
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 40,
+        "color": "dodgerblue",
+        "opacity": 0.8
+      },
+      "encoding": {
+        "x": {
+          "field": "Agriculture (% of Real GDP)",
+          "type": "quantitative",
+          "scale": {"domain": [0, 65]},
+          "title": "Agriculture (% of Real GDP)"
+        },
+        "y": {
+          "field": "Real 2017 GDP (US$MM)",
+          "type": "quantitative",
+          "scale": {"domain": [0, 23220000]},
+          "title": "Real 2017 GDP (US$MM)"
+        },
+        "tooltip": [
+          {"field": "Economy", "type": "ordinal", "title": "Country"},
+          {
+            "field": "Real 2017 GDP (US$MM)",
+            "type": "quantitative",
+            "title": "Real GDP (US$MM)",
+            "format": ","
+          },
+          {
+            "field": "Agriculture (% of Real GDP)",
+            "type": "quantitative",
+            "title": "Agriculture (% of Real GDP)",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "red", "opacity": 0.7},
+      "encoding": {
+        "x": {"field": "Agriculture (% of Real GDP)", "aggregate": "mean"},
+        "size": {"value": 1.4}
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "red", "opacity": 0.7},
+      "encoding": {
+        "y": {"field": "Real 2017 GDP (US$MM)", "aggregate": "mean"},
+        "size": {"value": 1.4}
+      }
+    }
+  ],
+  "config": {}
+}
